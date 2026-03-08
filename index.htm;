@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pustaka</title>
+    <style>
+        /* Gaya dasar untuk halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Kontainer utama agar letaknya di tengah dan tidak terlalu lebar */
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Gaya untuk Judul */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        /* Kontainer untuk daftar pustaka */
+        .daftar-pustaka {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Jarak antar blok */
+        }
+
+        /* Gaya untuk masing-masing blok daftar pustaka */
+        .blok-pustaka {
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 8px;
+            border-left: 6px solid #4a90e2; /* Aksen garis biru di sebelah kiri */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Efek bayangan tipis */
+            font-size: 16px;
+            transition: transform 0.2s ease;
+        }
+
+        /* Efek sedikit terangkat saat kursor diarahkan ke blok */
+        .blok-pustaka:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Gaya untuk nomor agar lebih menonjol */
+        .nomor {
+            font-weight: bold;
+            color: #4a90e2;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Daftar Pustaka</h1>
+
+        <div class="daftar-pustaka">
+            <!-- Item 1 -->
+            <div class="blok-pustaka">
+                <span class="nomor">1.</span> Christian, G.D., Dasgupta, P.K., Schug, K.A., 2014, Analytical Chemistry, Seventh Edition, Wiley.
+            </div>
+
+            <!-- Item 2 -->
+            <div class="blok-pustaka">
+                <span class="nomor">2.</span> Harvey, D., 2000, Modern Analytical Chemistry, McGraw-Hill Higher Education.
+            </div>
+
+            <!-- Item 3 -->
+            <div class="blok-pustaka">
+                <span class="nomor">3.</span> Skoog, D.A., West, D.M., Holler, F.J., Crouch, S.R., 2022, Fundamentals of Analytical Chemistry, Tenth Edition, Cengage.
+            </div>
+
+            <!-- Item 4 -->
+            <div class="blok-pustaka">
+                <span class="nomor">4.</span> Svehla, G., 1979, Vogel's: Textbook of Macro and Semimicro Qualitative Inorganic Analysis, Fifth Edition, Longman.
+            </div>
+
+            <!-- Item 5 -->
+            <div class="blok-pustaka">
+                <span class="nomor">5.</span> Day, R.A., & Underwood, A.L., 2002, Analisis Kimia Kuantitatif, Edisi Keenam, Erlangga, Jakarta. (Relevan untuk pemahaman stoikiometri senyawa dan reaksi pelarutan).
+            </div>
+
+            <!-- Item 6 -->
+            <div class="blok-pustaka">
+                <span class="nomor">6.</span> Harjadi, W., 1990, Ilmu Kimia Analitik Dasar, PT. Gramedia, Jakarta. (Buku rujukan standar mengenai prinsip dasar analisis kualitatif pendahuluan di Indonesia).
+            </div>
+
+            <!-- Item 7 -->
+            <div class="blok-pustaka">
+                <span class="nomor">7.</span> Khopkar, S.M., 1990, Konsep Dasar Kimia Analitik, UI-Press, Jakarta. (Membahas prosedur pemisahan dan uji pendahuluan senyawa anorganik secara rinci).
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
